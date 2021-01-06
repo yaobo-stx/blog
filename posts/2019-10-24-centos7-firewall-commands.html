@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CentOS7 Firewalld | wxsm&#39;s space</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" size="200x200" href="favicon-iphone.png">
+    <link rel="alternate" type="application/rss+xml" href="https://wxsm.space/rss.xml" title="wxsm&#39;s space RSS Feed">
+    <link rel="alternate" type="application/atom+xml" href="https://wxsm.space/feed.atom" title="wxsm&#39;s space Atom Feed">
+    <link rel="alternate" type="application/json" href="https://wxsm.space/feed.json" title="wxsm&#39;s space JSON Feed">
+    <meta name="description" content="Just another personal blog.">
+    <meta name="google-site-verification" content="ekuL5J7xK1IdFtP13v3KxpuGKnYS1oCT9PvZdjYm8Eg">
+    
+    <link rel="preload" href="/assets/css/0.styles.0b73a1a5.css" as="style"><link rel="preload" href="/assets/js/app.fab3b8de.js" as="script"><link rel="preload" href="/assets/js/4.1a33f30a.js" as="script"><link rel="preload" href="/assets/js/1.89483f76.js" as="script"><link rel="preload" href="/assets/js/122.8b74d65a.js" as="script"><link rel="prefetch" href="/assets/js/10.0671f719.js"><link rel="prefetch" href="/assets/js/100.146c27af.js"><link rel="prefetch" href="/assets/js/101.c4d2a7b0.js"><link rel="prefetch" href="/assets/js/102.5c648c3b.js"><link rel="prefetch" href="/assets/js/103.5cf3bb45.js"><link rel="prefetch" href="/assets/js/104.df80217e.js"><link rel="prefetch" href="/assets/js/105.4c276bde.js"><link rel="prefetch" href="/assets/js/106.776821d5.js"><link rel="prefetch" href="/assets/js/107.9a683c3c.js"><link rel="prefetch" href="/assets/js/108.a9e1e9ab.js"><link rel="prefetch" href="/assets/js/109.4c2cf710.js"><link rel="prefetch" href="/assets/js/11.fa0980a1.js"><link rel="prefetch" href="/assets/js/110.bed88bec.js"><link rel="prefetch" href="/assets/js/111.0a101f49.js"><link rel="prefetch" href="/assets/js/112.4516970c.js"><link rel="prefetch" href="/assets/js/113.cd1ea48e.js"><link rel="prefetch" href="/assets/js/114.561bb901.js"><link rel="prefetch" href="/assets/js/115.46ac757f.js"><link rel="prefetch" href="/assets/js/116.88bf84e3.js"><link rel="prefetch" href="/assets/js/117.5898d9b0.js"><link rel="prefetch" href="/assets/js/118.6f603946.js"><link rel="prefetch" href="/assets/js/119.b0b764d7.js"><link rel="prefetch" href="/assets/js/12.b0adcf58.js"><link rel="prefetch" href="/assets/js/120.28a3d4ef.js"><link rel="prefetch" href="/assets/js/121.b47d6875.js"><link rel="prefetch" href="/assets/js/123.79f29c90.js"><link rel="prefetch" href="/assets/js/124.34765e7b.js"><link rel="prefetch" href="/assets/js/125.f5ecb52f.js"><link rel="prefetch" href="/assets/js/126.61c28415.js"><link rel="prefetch" href="/assets/js/127.ee9dd110.js"><link rel="prefetch" href="/assets/js/128.747398de.js"><link rel="prefetch" href="/assets/js/129.cb6a4c79.js"><link rel="prefetch" href="/assets/js/13.1858e5ea.js"><link rel="prefetch" href="/assets/js/130.8018cb46.js"><link rel="prefetch" href="/assets/js/131.f12451fa.js"><link rel="prefetch" href="/assets/js/132.e3797761.js"><link rel="prefetch" href="/assets/js/133.51c20f62.js"><link rel="prefetch" href="/assets/js/134.b11ea62d.js"><link rel="prefetch" href="/assets/js/135.6da3e8d7.js"><link rel="prefetch" href="/assets/js/136.ec23d400.js"><link rel="prefetch" href="/assets/js/137.ee3ee086.js"><link rel="prefetch" href="/assets/js/14.30623d81.js"><link rel="prefetch" href="/assets/js/15.e2293de2.js"><link rel="prefetch" href="/assets/js/16.64fc67db.js"><link rel="prefetch" href="/assets/js/17.68b70cf8.js"><link rel="prefetch" href="/assets/js/18.e27d09ee.js"><link rel="prefetch" href="/assets/js/19.7ff2d463.js"><link rel="prefetch" href="/assets/js/20.8575e892.js"><link rel="prefetch" href="/assets/js/21.ed4abe24.js"><link rel="prefetch" href="/assets/js/22.c208332a.js"><link rel="prefetch" href="/assets/js/23.f3309544.js"><link rel="prefetch" href="/assets/js/24.9dde0951.js"><link rel="prefetch" href="/assets/js/25.523c6fc4.js"><link rel="prefetch" href="/assets/js/26.29985405.js"><link rel="prefetch" href="/assets/js/27.6afd9b3d.js"><link rel="prefetch" href="/assets/js/28.e3983c0e.js"><link rel="prefetch" href="/assets/js/29.6f6f4623.js"><link rel="prefetch" href="/assets/js/30.aaae0a31.js"><link rel="prefetch" href="/assets/js/31.d881e386.js"><link rel="prefetch" href="/assets/js/32.5c09a21d.js"><link rel="prefetch" href="/assets/js/33.fdd5d475.js"><link rel="prefetch" href="/assets/js/34.f440c0e1.js"><link rel="prefetch" href="/assets/js/35.48f33d1d.js"><link rel="prefetch" href="/assets/js/36.460cc513.js"><link rel="prefetch" href="/assets/js/37.4309f596.js"><link rel="prefetch" href="/assets/js/38.e21c19f2.js"><link rel="prefetch" href="/assets/js/39.9e99cc16.js"><link rel="prefetch" href="/assets/js/40.da38203e.js"><link rel="prefetch" href="/assets/js/41.64cba4ba.js"><link rel="prefetch" href="/assets/js/42.f4cc458d.js"><link rel="prefetch" href="/assets/js/43.2dc21e49.js"><link rel="prefetch" href="/assets/js/44.5e69afc7.js"><link rel="prefetch" href="/assets/js/45.3958b434.js"><link rel="prefetch" href="/assets/js/46.f6bb84f5.js"><link rel="prefetch" href="/assets/js/47.0af47eb5.js"><link rel="prefetch" href="/assets/js/48.b62e6ee9.js"><link rel="prefetch" href="/assets/js/49.bef8a6c8.js"><link rel="prefetch" href="/assets/js/5.3bcab57c.js"><link rel="prefetch" href="/assets/js/50.717be370.js"><link rel="prefetch" href="/assets/js/51.2841b0ce.js"><link rel="prefetch" href="/assets/js/52.33c67ce8.js"><link rel="prefetch" href="/assets/js/53.55bc66da.js"><link rel="prefetch" href="/assets/js/54.c818405b.js"><link rel="prefetch" href="/assets/js/55.eb418195.js"><link rel="prefetch" href="/assets/js/56.0fb1e484.js"><link rel="prefetch" href="/assets/js/57.94fb9d24.js"><link rel="prefetch" href="/assets/js/58.4677b2d8.js"><link rel="prefetch" href="/assets/js/59.384387d6.js"><link rel="prefetch" href="/assets/js/6.cae0ff11.js"><link rel="prefetch" href="/assets/js/60.891278b1.js"><link rel="prefetch" href="/assets/js/61.9ae9010b.js"><link rel="prefetch" href="/assets/js/62.92c14765.js"><link rel="prefetch" href="/assets/js/63.35b5211a.js"><link rel="prefetch" href="/assets/js/64.5e78fc61.js"><link rel="prefetch" href="/assets/js/65.804cafa2.js"><link rel="prefetch" href="/assets/js/66.3e94daaa.js"><link rel="prefetch" href="/assets/js/67.d1340258.js"><link rel="prefetch" href="/assets/js/68.a5306257.js"><link rel="prefetch" href="/assets/js/69.16301972.js"><link rel="prefetch" href="/assets/js/7.3ac6269f.js"><link rel="prefetch" href="/assets/js/70.da93e134.js"><link rel="prefetch" href="/assets/js/71.ea4da371.js"><link rel="prefetch" href="/assets/js/72.fb32315f.js"><link rel="prefetch" href="/assets/js/73.900a7086.js"><link rel="prefetch" href="/assets/js/74.ccc27b2a.js"><link rel="prefetch" href="/assets/js/75.9eb7036c.js"><link rel="prefetch" href="/assets/js/76.ab0621ff.js"><link rel="prefetch" href="/assets/js/77.01b6d49b.js"><link rel="prefetch" href="/assets/js/78.f0f810f7.js"><link rel="prefetch" href="/assets/js/79.5c1aa6a7.js"><link rel="prefetch" href="/assets/js/8.55b06485.js"><link rel="prefetch" href="/assets/js/80.23bc6f03.js"><link rel="prefetch" href="/assets/js/81.d7a6fbf3.js"><link rel="prefetch" href="/assets/js/82.065aad4c.js"><link rel="prefetch" href="/assets/js/83.91144019.js"><link rel="prefetch" href="/assets/js/84.e8708a65.js"><link rel="prefetch" href="/assets/js/85.47080c2b.js"><link rel="prefetch" href="/assets/js/86.52ce7f11.js"><link rel="prefetch" href="/assets/js/87.52e47c76.js"><link rel="prefetch" href="/assets/js/88.f0d64580.js"><link rel="prefetch" href="/assets/js/89.f7b6394f.js"><link rel="prefetch" href="/assets/js/9.bad3ab49.js"><link rel="prefetch" href="/assets/js/90.02d504db.js"><link rel="prefetch" href="/assets/js/91.520ecdbf.js"><link rel="prefetch" href="/assets/js/92.f3913c11.js"><link rel="prefetch" href="/assets/js/93.5aee393f.js"><link rel="prefetch" href="/assets/js/94.25d76f8a.js"><link rel="prefetch" href="/assets/js/95.d1750aec.js"><link rel="prefetch" href="/assets/js/96.a928bf2e.js"><link rel="prefetch" href="/assets/js/97.0e880a1f.js"><link rel="prefetch" href="/assets/js/98.b9a3fa2b.js"><link rel="prefetch" href="/assets/js/99.3afa5cc1.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.407c587a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0b73a1a5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-37172400><main class="page" data-v-37172400><div class="theme-default-content content__default" data-v-37172400><div class="space-header" data-v-37172400><a href="/" class="home-link router-link-active">wxsm's space</a> <div class="links"><span><a href="/" class="site-link router-link-active">home</a> <span>&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span></span><span><a href="/projects/" class="site-link">projects</a> <span>&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span></span><span><a href="/about/" class="site-link">about</a> <span>&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span></span><span><a href="/links/" class="site-link">links</a> <!----></span></div> <div class="search-box-container"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div></div> <div class="title" data-v-37172400><h3 data-v-37172400>Oct 24, 2019</h3> <h1 data-v-37172400>CentOS7 Firewalld</h1></div> <div class="content__default" data-v-37172400><p><strong>FirewallD</strong> (firewall daemon) 作为 <strong>iptables</strong> 服务的替代品，已经默认被安装到了 CentOS7 上面。</p> <h2 id="管理"><a href="#管理" class="header-anchor">#</a> 管理</h2> <h3 id="服务启动-停止"><a href="#服务启动-停止" class="header-anchor">#</a> 服务启动/停止</h3> <p>启动服务并设置自启动：</p> <div class="language- extra-class"><pre class="language-text"><code>sudo systemctl start firewalld
+sudo systemctl enable firewalld
+</code></pre></div><p>停止服务并禁用自启动：</p> <div class="language- extra-class"><pre class="language-text"><code>sudo systemctl stop firewalld
+sudo systemctl disable firewalld
+</code></pre></div><h3 id="检查运行状态"><a href="#检查运行状态" class="header-anchor">#</a> 检查运行状态</h3> <div class="language- extra-class"><pre class="language-text"><code>sudo firewall-cmd --state
+sudo systemctl status firewalld
+</code></pre></div><h3 id="服务重启"><a href="#服务重启" class="header-anchor">#</a> 服务重启</h3> <p>有两种办法可以重启 FirewallD：</p> <ol><li>重启 FirewallD 服务</li></ol> <div class="language- extra-class"><pre class="language-text"><code>sudo systemctl restart firewalld
+</code></pre></div><ol start="2"><li>重载配置文件（不断开现有会话与连接）</li></ol> <div class="language- extra-class"><pre class="language-text"><code>sudo firewall-cmd --reload
+</code></pre></div><p>建议使用第二种方法。</p> <h2 id="配置"><a href="#配置" class="header-anchor">#</a> 配置</h2> <p>FirewallD 使用两个配置集：「<strong>运行时配置集</strong>」以及「<strong>持久配置集</strong>」。</p> <ol><li>在 FirewallD 运行时：
+<ol><li>对运行时配置的更改<strong>会</strong>即时生效</li> <li>对持久配置集的更改<strong>不会</strong>被应用到本次运行中</li></ol></li> <li>在 FirewallD 重启（如系统重启或服务重启）或重载配置时：
+<ol><li>运行时配置集的更改<strong>不会</strong>被保留</li> <li>持久配置集的更改<strong>会</strong>作为新的运行时配置而应用</li></ol></li></ol> <p>默认情况下，使用 <code>firewall-cmd</code> 命令对防火墙做出的更改都将作用于运行时配置集，但如果添加了 <code>permanent</code> 参数则可以将改动持久化。如果要将规则同时添加到两个配置集中，有两种方法：</p> <ol><li>将规则同时添加到两个配置集中</li></ol> <div class="language- extra-class"><pre class="language-text"><code>sudo firewall-cmd --zone=public --add-service=http --permanent
+sudo firewall-cmd --zone=public --add-service=http
+</code></pre></div><ol start="2"><li>将规则添加到持久配置集中，并重载</li></ol> <div class="language- extra-class"><pre class="language-text"><code>sudo firewall-cmd --zone=public --add-service=http --permanent
+sudo firewall-cmd --reload
+</code></pre></div><h2 id="区域"><a href="#区域" class="header-anchor">#</a> 区域</h2> <p>区域（Zone）是 FirewallD 的核心特性，其它所有特性都与 Zone 相关，Zone 可以理解为场景、位置等，我们可以给不同的 Zone 定义不同的规则集。</p> <p>FirewallD 的默认配置中预定义了几个 Zone，按照可信度作升序排序依次为：<code>drop</code> -&gt; <code>block</code> -&gt; <code>public</code> -&gt; <code>external</code> -&gt; <code>dmz</code> -&gt; <code>work</code> -&gt; <code>home</code> -&gt; <code>internal</code> -&gt; <code>trusted</code>，其中 <code>public</code> 是默认值。</p> <p>相关指令：</p> <div class="language- extra-class"><pre class="language-text"><code># list all zones
+sudo firewall-cmd --get-zones
+
+# get &amp; set default zone
+sudo firewall-cmd --get-default-zone
+sudo firewall-cmd --set-default-zone=external
+
+# interfaces
+sudo firewall-cmd --zone=public --add-interface=wlp1s0
+sudo firewall-cmd --zone=public --change-interface=wlp1s0
+
+# get a list of all active zones
+sudo firewall-cmd --get-active-zones
+
+# print information about a zone
+sudo firewall-cmd --info-zone public
+</code></pre></div><h2 id="端口"><a href="#端口" class="header-anchor">#</a> 端口</h2> <p>使用 <code>--add-port</code> 参数来打开一个端口以及指定它的协议，zone 如果不指定的话则为当前的默认值。例如，通过以下命令来允许 HTTP 以及 HTTPS 协议的网络流量进入：</p> <div class="language- extra-class"><pre class="language-text"><code>sudo firewall-cmd --zone=public --permanent --add-port=80/tcp --add-port=443
+sudo firewall-cmd --reload
+</code></pre></div><p>通过 info 指令可以查看刚才添加的端口：</p> <div class="language- extra-class"><pre class="language-text"><code>sudo firewall-cmd --info-zone public
+</code></pre></div><p>使用 <code>--remove-port</code> 参数来阻止或关闭一个端口：</p> <div class="language- extra-class"><pre class="language-text"><code>sudo firewall-cmd --zone=public --permanent --remove-port=80/tcp --remove-port=443/tcp
+</code></pre></div><h2 id="服务"><a href="#服务" class="header-anchor">#</a> 服务</h2> <p>使用 <code>--add-service</code> 以及 <code>--remove-service</code> 来启用、禁用服务。</p> <div class="language- extra-class"><pre class="language-text"><code># enable
+sudo firewall-cmd --zone=public --permanent --add-service=http 
+sudo firewall-cmd --reload 
+
+# disable
+sudo firewall-cmd --zone=public --permanent --remove-service=http 
+sudo firewall-cmd --reload 
+</code></pre></div><h2 id="端口转发"><a href="#端口转发" class="header-anchor">#</a> 端口转发</h2> <div class="language- extra-class"><pre class="language-text"><code># 启用 ip masquerade
+sudo firewall-cmd --zone=public --add-masquerade
+
+# 在同一台服务器上将 80 端口的流量转发到 8080 端口
+sudo firewall-cmd --zone=&quot;public&quot; --add-forward-port=port=80:proto=tcp:toport=8080
+
+# 将本地的 80 端口的流量转发到 IP 地址为 ：1.2.3.4 的远程服务器上的 8080 端口
+sudo firewall-cmd --zone=&quot;public&quot; --add-forward-port=port=80:proto=tcp:toport=8080:toaddr=1.2.3.4
+
+# 删除规则
+sudo firewall-cmd --zone=public --remove-masquerade
+</code></pre></div></div> <br data-v-37172400> <div class="last-updated" data-v-37172400><span class="prefix" data-v-37172400>Last Updated:</span> <span class="time" data-v-37172400>2 months ago</span></div>  <div class="space-footer" data-v-a298b7ba data-v-37172400><p class="footer-text" data-v-a298b7ba>© 2021 wxsm</p> <p class="footer-text" data-v-a298b7ba>
+    Powered by <a href="https://vuepress.vuejs.org/" target="_blank" data-v-a298b7ba>VuePress</a>
+     · 
+    Theme by <a href="https://github.com/wxsms/vuepress-theme-mini" target="_blank" data-v-a298b7ba>mini</a></p></div></div></main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.fab3b8de.js" defer></script><script src="/assets/js/4.1a33f30a.js" defer></script><script src="/assets/js/1.89483f76.js" defer></script><script src="/assets/js/122.8b74d65a.js" defer></script>
+  </body>
+</html>
